@@ -1,0 +1,658 @@
+
+@font-face {
+    font-family: 'font-semibold';
+    src: url(fonts/K2D/K2D-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'font-pagina';
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'font-logo';
+    src: url(fonts/K2D/K2D-Medium.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'font-pagina', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FEF9EB;
+}
+
+.header-container {
+    position: sticky;
+    top: 0px;
+    background-color: #FEF9EB;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.1rem 0px;
+    margin-bottom: 4rem;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 35px;
+    padding-right: 5px;
+}
+
+.logo-name {
+    font-size: 1.5rem;
+    color: #f1a412;
+    font-family: 'font-logo', sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #636258;
+    font-family: 'font-semibold', sans-serif;
+}
+
+.nav-item a:hover {
+    color: #363631;
+}
+
+.nav-item a::after {
+    content: '';
+    background-color: #f1a412;
+    border-radius: 2px;
+    height: 3px;
+    width: 0%;
+    display: block;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.header-button {
+    padding: 8px 12px;
+    background-color: #f7b740;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.315);
+    font-size: 0.9rem;
+    font-family: 'font-semibold', sans-serif;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #f1a412;
+    transition: 0.4s;
+}
+
+.responsive-menu {
+    display: none;
+}
+
+.responsive-options {
+    display: none;
+}
+
+/************ Section 1 *************/
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+    padding: 0px 3rem;
+}
+
+.section1-content {
+    width: 450px;
+    margin-top: 2rem;
+}
+
+.section1-content h1 {
+    font-family: 'bold', sans-serif;
+    font-size: 3rem;
+    color: #252123;
+    margin-bottom: 1.5rem;
+}
+
+.h1-mark {
+    font-family: 'bold', sans-serif;
+    color: #f1a412;
+}
+
+.text {
+    font-family: 'font-pagina', sans-serif;
+    font-size: 15px;
+    color: #252123;
+    margin-bottom: 1.3rem;
+}
+
+.cardapio-contato {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+
+.cardapio-contato button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f7b740;
+    font-family: 'font-pagina', sans-serif;
+    font-size: 14px;
+    color: #252123;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+}
+
+.cardapio-contato button:hover {
+    background-color: #e4a93b;
+    transition: 0.3s;
+}
+
+.cardapio-contato p {
+    font-size: 15px;
+    padding: 8px 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+}
+
+.cardapio-contato p i {
+    background-color: #f7b740;
+    padding: 5px 8px;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.social {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social i {
+    color: black;
+    font-size: 17px;
+    padding: 8px 11px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 7px;
+}
+
+.section1-img img {
+    background-color: #fac77b;
+    padding: 3rem;
+    border-radius: 11rem;
+}
+
+
+
+/************ Section 2 *************/
+
+.section2 {
+    margin-bottom: 9rem;
+    padding: 0px 2rem;
+}
+
+.titulo-cardapio {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-cardapio h3 {
+    color: #f1a412;
+    font-size: 1.5rem;
+    font-family: 'bold', sans-serif;
+}
+
+.titulo-cardapio h2 {
+    font-family: 'bold', sans-serif;
+    font-size: 1.9rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin-bottom: 2.2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 340px;
+    padding: 20px 6px;
+    background-color: #FFFFFD;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.205);
+    border-radius: 1.8rem;
+}
+
+.card img {
+    height: 205px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: rgb(20, 20, 20);
+}
+
+.card-desc {
+    text-align: center;
+    font-size: 15px;
+    color: #363631;
+    margin-bottom: 12px;
+}
+
+.avaliacoes i {
+    color: #ebaf3f;
+    font-size: 15px;
+}
+
+.avaliacoes span {
+    font-size: 15px;
+    color: #363631;
+}
+
+.card-preco {
+    font-family: 'bold', sans-serif;
+    margin: 12px 0px;
+}
+
+.pedir-btn {
+    padding: 8px 12px;
+    background-color: #f7b740;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.315);
+    font-size: 1rem;
+    font-family: 'font-semibold', sans-serif;
+    cursor: pointer;
+}
+
+.pedir-btn:hover {
+    background-color: #f1a412;
+    transition: 0.4s;
+}
+
+.s2-cardapiobtn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section2-cardapiobtn {
+    padding: 10px 18px;
+    border: none;
+    background-color: #f7b740;
+    font-family: 'font-pagina', sans-serif;
+    font-size: 1rem;
+    color: #252123;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+}
+
+.section2-cardapiobtn:hover {
+    background-color: #e4a93b;
+    transition: 0.3s;
+}
+
+/************ Section 3 *************/
+
+.section3 {
+    margin-bottom: 10rem;
+    padding: 0px 2rem;
+}
+
+.section3-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.img-chef img {
+    height: 380px;
+    border-radius: 15px;
+}
+
+.section3-title h2 {
+    font-family: 'bold', sans-serif;
+    color: #f1a412;
+}
+
+.section3-title h1 {
+    font-family: 'bold', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.depoimento {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 600px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.205);
+    border-radius: 12px;
+}
+
+.nome-pessoa {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.depoimento-p {
+    margin-bottom: 4px;
+    font-size: 15px;
+    color: #252123;
+}
+
+.avaliacao-depoimento i {
+    color: #ebaf3f;
+}
+
+.depoimentos-btn {
+    padding: 8px 12px;
+    background-color: #f7b740;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.315);
+    font-size: 1rem;
+    font-family: 'font-semibold', sans-serif;
+    cursor: pointer;
+}
+
+.depoimentos-btn:hover {
+    background-color: #e0a63a;
+    transition: 0.3s;
+}
+
+/************ Footer *************/
+
+footer {
+    background-color: #ffe8b4;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem 0px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.footer-social i {
+    color: black;
+    font-size: 17px;
+    padding: 8px 11px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 7px;
+}
+
+/******escobder imagem no desktop****/
+
+
+.banner_para_celular {
+    display: block; /* Por padrão, a imagem é exibida */
+    
+}
+
+@media (min-width: 700px) {
+    .banner_para_celular {
+        display: none; /* Esconde a imagem em telas de desktop */
+    }
+}
+
+
+/********** Notebook ***********/
+
+@media screen and (max-width: 1310px) {
+
+    .section1-img img {
+        height: 450px;
+    }
+    
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    
+    
+}
+
+/********** Mobile ***********/
+
+@media screen and (max-width: 810px) {
+
+    .banner_para_celular img {
+        height: 450px;
+        width: 350px;
+    margin-left: 3%;
+    
+     
+    }
+
+    .section1-img img {
+        height: 250px;
+    }
+
+    /********** MENU RESPONSIVO ***********/
+
+    .header {
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .menu-burguer {
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    .responsive-menu button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 1rem;
+    }
+
+    /********** MENU RESPONSIVO ABERTO ***********/
+
+    .responsive-options {
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+    
+    .nav-list-responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        list-style: none;
+        margin-bottom: 1.8rem;
+    }
+    
+    .nav-itemr a {
+        text-decoration: none;
+        color: #252123;
+    }
+
+    .nav-itemr a:hover {
+        text-decoration: underline;
+    }
+    
+    .header-buttonr {
+        padding: 8px 12px;
+        background-color: #f7b740;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.315);
+        font-size: 0.9rem;
+        font-family: 'font-semibold', sans-serif;
+        cursor: pointer;
+    }
+    
+    .header-buttonr:hover {
+        background-color: #f1a412;
+        transition: 0.4s;
+    }
+
+    .open {
+        display: block;
+    }
+
+    /********** Section 1 ***********/
+
+    .section1-img img {
+        display: none;
+        
+    }
+
+    .section1 {
+        justify-content: center;
+        padding: 0px 2rem;
+    }
+
+    .section1-content {
+        margin-top: 0px;
+    }
+
+    .section1-content h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    .text {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 1.4rem;
+    }
+    
+    .cardapio-contato {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .cardapio-contato button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .cardapio-contato p {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .cardapio-contato p i {
+        display: none;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    /********** Section 2 ***********/
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    /********** Section 3 ***********/
+
+    .section3-content {
+        gap: 0px;
+    }
+
+    .section3-title h2 {
+        text-align: center;
+    }
+    
+    .section3-title h1 {
+        text-align: center;
+    }
+
+    .depoimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+    }
+
+    .depoimento {
+        width: 80vw;
+    }
+
+    .img-chef img {
+        display: none;
+    }
+
+    /********** Footer ***********/
+
+    .footer-items {
+        flex-direction: column;
+    }
+}
